@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/q', to: 'graphs#query' #http://localhost:3000/q?query={actor(id: 1){name, movies{title}}}
 end
